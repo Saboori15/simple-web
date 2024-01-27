@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #f0f0f4;
+    background-image: url(http://davealger.info/i/squares.png);
+    background-position: bottom;
+    animation: 12s linear 0s infinite bp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Snell Roundhand, cursive;
+    color: red;
+    font-size:1.5em;
+}
+
+#question {
+    text-align: center;
+}
+
+button {
+    margin: 20px; /* Increased the margin */
+    padding: 20px 40px; /* Increased padding for bigger size */
+    font-size: 30px; /* Increased font size for better readability */
+    font-family: Snell Roundhand, cursive;
+    font-weight:900;
+    cursor: pointer;
+    background-color: #e83a5d; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    box-shadow: 0 4px #999; /* Add a shadow effect */
+}
+
+button:hover {
+    background-color: #cc3553; /* Slightly darker green on hover */
+}
+
+button:active {
+    background-color: #9c283f;
+    box-shadow: 0 2px #666; /* Shadow effect to make the button look like it's being pressed */
+    transform: translateY(2px); /* Move the button down a bit when clicked */
+}
+
+
+  
+  @keyframes bp {
+    0% {
+      background-color: ivory;
+      background-position:  200px 0;
+    }
+    25% {
+      background-color: white;
+      background-position:  150px 50px;
+    }
+    50% {
+      background-color: ivory;
+      background-position:  100px 100px;
+    }
+    75% {
+      background-color: white;
+      background-position:  50px 150px;
+    }
+    100% {
+      background-color: ivory;
+      background-position:  0 200px;
+    }
+  }
